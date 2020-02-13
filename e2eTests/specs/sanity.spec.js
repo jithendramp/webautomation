@@ -7,7 +7,7 @@ import List from "../page-objects/productList.page";
 import Details from "../page-objects/productDetails.page";
 import Order from "../page-objects/order.page";
 
-describe("Flipkart", () => {
+describe("Flipkart - test1", () => {
   it('User should "Login" to an application', async() => {
     browser.url(testData.cart.url);
     browser.windowHandleFullscreen();
