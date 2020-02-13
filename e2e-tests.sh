@@ -12,7 +12,7 @@ then
 fi
 
 echo "frontend started"
-node_modules/.bin/serve -p 5001 -s build & NODE_SERVE=$!
+./node_modules/.bin/serve -p 5001 -s build & NODE_SERVE=$!
 
 # making sure the server has started
 echo "------start sleeping------"
