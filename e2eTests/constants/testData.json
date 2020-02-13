@@ -1,0 +1,27 @@
+{
+	"cart": {
+		"url": "https://www.flipkart.com/"
+	},
+
+	"login": {
+		"username": "7676746239",
+		"password": "9008732837"
+	},
+	
+	"user": {
+		"username": "JITHENDRA"
+	},
+
+	"products": {
+		"shoes": "shoes",
+		"mobiles": "mobiles",
+		"laptops": "laptops",
+		"watches": "watches"
+	},
+
+	"brand": {
+		"puma": "Puma",
+		"adidas": "ADIDAS",
+		"nike": "Nike"
+	}
+}
