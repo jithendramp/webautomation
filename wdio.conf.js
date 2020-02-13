@@ -11,12 +11,12 @@ exports.config = {
   // NPM script (see https://docs.npmjs.com/cli/run-script) then the current working
   // directory is where your package.json resides, so `wdio` will be called from there.
   //
-  specs: ["e2eTests/specs/**/*.spec.js"],
+  specs: ["./e2eTests/specs/**/*.spec.js"],
 
   suites: {
     //Suite which does not involve Jenkins Build for KBs
     default: [
-      "e2eTests/specs/sanity.spec.js"
+      "./e2eTests/specs/sanity.spec.js"
     ],
     //Suite which contains test involving Jenkins Build for KBs
     builds: [
@@ -56,10 +56,8 @@ exports.config = {
       // grid with only 5 firefox instances available you can make sure that not more than
       // 5 instances get started at a time.
       maxInstances: 1,
-      os: 'windows',
-      'os_vrsion': 8,
-      browser: 'chrome',
-      'browser_version': '80.0',
+      //
+      browserName: "chrome",
       chromeOptions: {
         args: [
           // "user-data-dir=./chrome/user-data",
@@ -105,7 +103,7 @@ exports.config = {
   bail: 0,
   //
   // Saves a screenshot to a given path if a command fails.
-  screenshotPath: "errorShots/",
+  screenshotPath: "./errorShots/",
   //
   // Set a base URL in order to shorten url command calls. If your url parameter starts
   // with "/", then the base url gets prepended.
@@ -169,7 +167,8 @@ exports.config = {
   mochaOpts: {
     ui: "bdd",
     compilers: ["js:@babel/register"],
-    timeout: 120000 
+    timeout: 180000 //Added as Create KintoBlock takes a little more than 10 seconds.
+    // timeout: 24 * 60 * 60 * 10000 //TODO browser.debug()
   }
   //
   // =====
