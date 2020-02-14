@@ -26,5 +26,5 @@ echo "------starting tests------"
 npm run e2e-tests
 
 echo "------stopping selenium & server------"
-pkill -f selenium-standalone
-kill $NODE_SERVE
+# pkill -f selenium-standalone
+# kill $NODE_SERVE
