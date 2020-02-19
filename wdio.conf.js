@@ -57,19 +57,21 @@ exports.config = {
       // 5 instances get started at a time.
       maxInstances: 1,
       //
-      browserName: "chrome",
-      chromeOptions: {
-        args: [
-          // "user-data-dir=./chrome/user-data",
-          "--disable-notifications",
-          "--disable-features=VizDisplayCompositor",
-          "--disable-dev-shm-usage",
-          // "--remote-debugging-port=9222",
-          "--no-sandbox",
-          "--disable-gpu",
-          "--use-fake-ui-for-media-stream"
-          // "--headless"
-        ],
+      browserName: "internet explorer",
+      browserVersion: '11.0',
+      platformName: 'Windows 10'
+//       chromeOptions: {
+//         args: [
+//           // "user-data-dir=./chrome/user-data",
+//           "--disable-notifications",
+//           "--disable-features=VizDisplayCompositor",
+//           "--disable-dev-shm-usage",
+//           // "--remote-debugging-port=9222",
+//           "--no-sandbox",
+//           "--disable-gpu",
+//           "--use-fake-ui-for-media-stream"
+//           // "--headless"
+//         ],
         prefs: {
           "download.default_directory": pathToDownload
         }
